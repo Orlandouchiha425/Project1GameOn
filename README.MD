@@ -1,2 +1,21 @@
-test
-test 2
+HTML:
+My game is similar to DuckHunt Game. with my personal modifications
+
+Flex Container Div: I am keeping everything within my flex container;Credit for practice on the flex goes to arthurs study videos. https://www.youtube.com/watch?v=3YW65K6LcIA&t=1833s  Traversy Media
+
+Banner: is only for decorations, moves from side to side (Pretend you supposed to hit them)
+
+Buttons:All my buttons are in the middle  
+One Player: if you click only One player gets to play
+Two players: two players can play
+How to: if you click on it it will display information how to play
+
+
+
+CSS:
+
+
+
+
+
+JS:
