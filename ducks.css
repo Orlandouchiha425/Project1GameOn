@@ -46,16 +46,67 @@ color: #548124;
 }
 
 
-.targets{
+.circle1{
 
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: red;
-    align-self: flex-start;
+    align-self: start;
+    
+}
+.circle2{
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    align-self: start;
+    
 }
 
 
+
+.circle4{
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:yellow;
+    align-self:left;
+    align-self: start;
+}
+
+
+.circle5{
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:yellow;
+    align-self:left;
+    align-self: start;
+}
+
+
+.circle6{
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:yellow;
+    align-self:left;
+    align-self: start;
+}
+.circle7{
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:yellow;
+    align-self:left;
+    align-self: start;
+}
 
 @media (max-resolution: 300dpi) {
     body {
