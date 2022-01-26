@@ -13,9 +13,17 @@ How to: if you click on it it will display information how to play
 
 
 CSS:
-
-
+have a better understanding of flexbox thanks to https://www.youtube.com/watch?v=3YW65K6LcIA&t=699s     Traversy -Videos shared by Arthur
+Box Shadow: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator
 
 
 
 JS:
+did not copied the code, i did noticed they used canvas, it creates shapes into my html. by using canvas in html and then calling it in JS
+Instead of making random divs i decided to create a function to draw unlimited items without having many codes. see commented out html.
+also went into MDN and searched more into this.https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D   &  https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc  used this to draw Circle- Again ignoring Code from above
+
+https://codepen.io/b4rb4tron/pen/wjyXNJ
+
+Time Out ----  https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
