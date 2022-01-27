@@ -16,9 +16,27 @@ body{
    
 }
 
+#endGame{
+    display:none;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(0.25turn, #7bb82c, #bae00d, #60a34f);
+    margin: 15px;
+    box-shadow:  -2px 2px 0px #192719;
+    align-self: auto;
+    
+}
 
 
-
+#restart{
+    display:none;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(0.25turn, #7bb82c, #bae00d, #60a34f);
+    margin: 15px;
+    box-shadow:  -2px 2px 0px #192719;
+    align-self: auto;
+}
 
 .item1{
     width: 80px;
@@ -75,11 +93,7 @@ body{
 
 
 
-.scoreboard{
-  width: fit-content;
-  height: fit-content;
-  background-color: lightcoral;
-}
+
 
 
 
@@ -114,8 +128,8 @@ color: #548124;
     align-self:flex-start;
     animation-name: moveBanner;
 -o-animation-delay: initial;
-animation-duration: 2s;
-animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-iteration-count: 20px;
 animation-delay: 2ms;
 }
 
@@ -172,8 +186,8 @@ animation-delay: 2ms;
 
 #circle5{
 
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: rgb(0, 255, 191);
     align-self: start;
@@ -190,7 +204,7 @@ animation-delay: 2ms;
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color:#a8974cfa;
+    background-color:#fc0000fa;
     align-self:left;
     align-self: start;
 
@@ -264,24 +278,3 @@ animation-delay: 2ms;
 
 }
 
-/* @keyframes moveTargets{
-    
-   
-    from{ transform: translateX(500px) rotate(30deg) translateY(30px)}
- 
- 
- } */
-
- @keyframes moveTargets{
-    
-   
-    from{ transform: translateX(500px) rotate(80) translateY(30px)}
- 
- 
- }
-/* 
- @keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: rgb(60, 255, 0); }
-} */
