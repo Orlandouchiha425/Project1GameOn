@@ -13,6 +13,10 @@ const circle5 = document.getElementById('circle5');
 const endGameButton=document.getElementById('endGame');
 const restartButton=document.getElementById('restart');
 const scoreBoard=document.getElementById('scoreboard');
+const pause=document.getElementsByClassName('pause');
+
+
+let score=[];
 
 class Player { 
     constructor(points){
@@ -20,19 +24,18 @@ class Player {
         
     }
 
-     hit(params) {
-        this.points++;
-        console.log("your current score is "+ this.points)
-    }
+    //  hit(params) {
+    //     this.points++;
+    //     console.log("your current score is "+ this.points)
+    // }
 }
 
 const player1=new Player(0);
+const player2=new Player(0)
 
 
 
 
-
-let score=0;
 
 
 
@@ -70,15 +73,39 @@ onePlayer.addEventListener('click',(evt)=>{
 })
 
 
+twoPlayers.addEventListener('click',(evt)=>{
+    onePlayer.style.display='none';
+    twoPlayers.style.display='none';
+    howTo.style.display='none';
+    circle1.style.display='block';
+    circle2.style.display='block';
+    circle3.style.display='block';
+    circle4.style.display='block';
+    circle5.style.display='block';
+    endGameButton.style.display='block';
+    restartButton.style.display='block';
+    
+    allCircles()
+    
+})
+
+
+
+
+
 
 
 const newTotal=()=>{
-
+    let score=0;
 
     player1.points++
-    scoreBoard.textContent="your current score is " + player1.points;
-    if (player1.points===2) {
+    score+=player1.points;
+    console.log(score);
+    scoreBoard.textContent="your current score is " + score;
+    if (player1.points===3) {
         
+        
+       
         console.log('you won');
         window.alert("you won");
         window.confirm("Do you want to end Game?");
@@ -88,7 +115,7 @@ const newTotal=()=>{
     }
 
 
-    setTimeout(newTotal,3000,"Time is up")
+    // setTimeout(newTotal,3000,"Time is up")
 
 const allCircles=()=>{
 
@@ -152,7 +179,7 @@ const allCircles=()=>{
         }
     })
         
-    
+   
 }
 
 

@@ -16,6 +16,7 @@ CSS:
 have a better understanding of flexbox thanks to https://www.youtube.com/watch?v=3YW65K6LcIA&t=699s     Traversy -Videos shared by Arthur
 Box Shadow: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator
 
+animation pause: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state
 
 
 JS:

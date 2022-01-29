@@ -1,7 +1,7 @@
 
 body{
     background-image: url("./mariobros3backgroun.png");
-    background-size: cover;
+    background-size: center;
 
 }
 
@@ -13,6 +13,7 @@ body{
     /* background-color: rgb(255, 255, 255); */
     flex-direction: column;
     align-items: center;
+    border:solid black;
    
 }
 
@@ -38,6 +39,11 @@ body{
     align-self: auto;
 }
 
+
+.scoreboard{
+    align-self: flex-end;
+    position: relative;
+}
 .item1{
     width: 80px;
     height: 40px;
@@ -69,7 +75,7 @@ body{
 
 
 
-    .item2:hover{
+.item2:hover{
         border-color: rgb(0, 255, 242);
         box-shadow:  -2px 2px 0px #65e54b
     }
@@ -123,14 +129,12 @@ color: #548124;
     height: 30px;
     border-radius: 50%;
     background-color: red;
-    align-self: start;
+    
     display: none;
-    align-self:flex-start;
-    animation-name: moveBanner;
--o-animation-delay: initial;
-animation-duration: 10s;
-animation-iteration-count: 20px;
-animation-delay: 2ms;
+    align-self:center;
+  
+    animation: bounce 3s ease-in-out infinite;
+    animation-delay: 1ms;
 }
 
 #circle2{
@@ -141,11 +145,7 @@ animation-delay: 2ms;
     align-self: start;
     display: none;
     align-self:flex-start;
-    animation-name: moveBanner;
-    animation-delay: 1ms;
-    animation-direction:normal;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+   
 }
 
 
@@ -199,21 +199,6 @@ animation-delay: 2ms;
     animation-iteration-count: infinite;
 }
 
-#goldensnitch{
-
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color:#fc0000fa;
-    align-self:left;
-    align-self: start;
-
-    animation-name: moveBanner;
-    animation-direction:normal;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
 
 
 
@@ -238,12 +223,10 @@ animation-delay: 2ms;
         box-shadow:  -2px 2px 0px #65e54b
         
     
-        
-
-}
+        }
     
       
-    
+
 
 
 
@@ -252,15 +235,6 @@ animation-delay: 2ms;
 }
 
 
-
-/* ^^shows hidden items */
-
-
-/* 
-#targets{
-    display: none; 
-
-}  */
 
 
 
@@ -277,4 +251,30 @@ animation-delay: 2ms;
 
 
 }
+
+
+@keyframes bounce{
+    0% /* 0%,40%,100% */
+
+    
+    {
+        transform: translateY(0);
+    }
+    20%
+    {
+            transform: translateY(-200px);
+        }
+
+    50%
+    {
+        transform: translateX(-200px)
+    }
+    100%{
+        transform:translateX(500px)
+    }
+    }
+
+
+
+
 
