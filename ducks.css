@@ -5,6 +5,11 @@ body{
 
 }
 
+
+/* #dog{
+    border-radius: 20px;
+   opacity: 20px;
+} */
 .flex-container{
     display: flex;
     justify-content: center;
@@ -39,10 +44,15 @@ body{
     align-self: auto;
 }
 
+#playertwo{
+    display: none;
+}
+#scoreboard{
+    align-self: center;
+    font-size: 20px;
+    background-color: white;
+    color: red;
 
-.scoreboard{
-    align-self: flex-end;
-    position: relative;
 }
 .item1{
     width: 80px;
@@ -55,7 +65,12 @@ body{
 }
 
 
-
+#playButton{
+    display: none;
+}
+#playerTwoButton{
+    display: none;
+}
 
 .item1:hover{
     border-color: rgb(0, 255, 242);
