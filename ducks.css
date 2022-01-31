@@ -6,10 +6,7 @@ body{
 }
 
 
-/* #dog{
-    border-radius: 20px;
-   opacity: 20px;
-} */
+
 .flex-container{
     display: flex;
     justify-content: center;

@@ -61,7 +61,7 @@ const player2=new Player(0)
 // let currentPlayer2=player2;
 
 
-
+let whoseTurn="player1";
 
 
 howTo.addEventListener('click',(evt)=>{
@@ -75,6 +75,8 @@ closeHowTo.addEventListener('click',(evt)=>{
 
 
 
+
+//
 
 onePlayer.addEventListener('click',(evt)=>{
     onePlayer.style.display='none';
@@ -94,6 +96,10 @@ onePlayer.addEventListener('click',(evt)=>{
 })
 
 
+
+
+
+
 twoPlayers.addEventListener('click',()=>{
     onePlayer.style.display='none';
     twoPlayers.style.display='none';
@@ -102,7 +108,8 @@ twoPlayers.addEventListener('click',()=>{
     
 
 playButton.addEventListener('click',(evt)=>{
-
+    
+       
         circle1.style.display='block';
         circle2.style.display='block';
         circle3.style.display='block';
@@ -133,9 +140,13 @@ playButton.addEventListener('click',(evt)=>{
         
          
     })
-   
-playerTwoButton.addEventListener('click',(evt)=>{
+
     
+    
+
+    
+playerTwoButton.addEventListener('click',(evt)=>{
+whoseTurn="player2";
       
     circle1.style.display='block';
     circle2.style.display='block';
@@ -145,10 +156,11 @@ playerTwoButton.addEventListener('click',(evt)=>{
     
     playButton.style.display="none"; 
     playerTwoButton.style.display="none"
-    secondPlayer()
+    
     timer = setInterval(() => {
         counter++
         if(counter > 10){
+
            clearInterval(timer)
            console.log("time is up")
             checkForWin()
@@ -161,30 +173,7 @@ playerTwoButton.addEventListener('click',(evt)=>{
 })
 
 
-// playerTwoButton.addEventListener('click',(evt)=>{
-    
-      
-//     circle1.style.display='block';
-//     circle2.style.display='block';
-//     circle3.style.display='block';
-//     circle4.style.display='block';
-//     circle5.style.display='block';
-    
-//     playButton.style.display="none"; 
-//     playerTwoButton.style.display="none"
-//     secondPlayer()
-//     timer = setInterval(() => {
-//         counter++
-//         if(counter > 10){
-//            clearInterval(timer)
-//            console.log("time is up")
-//             checkForWin()
-//         }
-        
-//     }, 1000)
-                
-           
-// })
+
 
 
 
@@ -215,6 +204,7 @@ const checkForWin=()=>{
 
 
 const playerOne=()=>{
+
     player1.points++
     scorePlayerOne=player1.points;
     console.log("player one score is "+scorePlayerOne)
@@ -312,12 +302,12 @@ const allCircles=()=>{
     circle5.addEventListener('click',(evt)=>{
         if (evt.target===circle5) {
             console.log('Hit')
-            player1.points++
-            scoreBoard.textContent="your current score is " + player1.points;
-            // if (player1.points===5) {
-            //     console.log('you won')
+            // player1.points++
+            // scoreBoard.textContent="your current score is " + player1.points;
+            // // if (player1.points===5) {
+            // //     console.log('you won')
                 
-            // }
+            // // }
             scorePlayerOneGame()
         }
     })
@@ -327,49 +317,56 @@ const allCircles=()=>{
 
 
 
+
 const firstPlayer=()=>{
         
      circle1.addEventListener('click',(evt)=>{
        
-        if (evt.target===circle1) {
-            
+        if (whoseTurn==="player1") {
             playerOne()
+           
         
         }
+        else {playertwo()}
     })
     
     circle2.addEventListener('click',(evt)=>{
-        if (evt.target===circle2) {
-            
-            playerOne()        
-            }
+        if (whoseTurn==="player1") {
+            playerOne()
+           
+        
+        }
+        else {playertwo()}
         }
     )
     
     
     circle3.addEventListener('click',(evt)=>{
-        if (evt.target===circle3) {
-            console.log('Hit')
-            
-            playerOne()    
-            }
+        if (whoseTurn==="player1") {
+            playerOne()
+           
+        
+        }
+        else {playertwo()}
             
         
     })
     circle4.addEventListener('click',(evt)=>{
-        if (evt.target===circle4) {
-            console.log('Hit')
-            
+        if (whoseTurn==="player1") {
             playerOne()
+           
+        
         }
+        else {playertwo()}
     })
     
     circle5.addEventListener('click',(evt)=>{
-        if (evt.target===circle5) {
-            console.log('Hit')
-    
-            playerOne()  
+        if (whoseTurn==="player1") {
+            playerOne()
+           
+        
         }
+        else {playertwo()}
     })
         
    
@@ -384,51 +381,51 @@ const firstPlayer=()=>{
 
 
 
-const secondPlayer=()=>{
+// const secondPlayer=()=>{
 
-    circle1.addEventListener('click',(evt)=>{
+//     circle1.addEventListener('click',(evt)=>{
        
-        if (evt.target===circle1) {
+//         if (evt.target===circle1) {
             
-            playertwo()
+//             playertwo()
         
-        }
-    })
+//         }
+//     })
     
-    circle2.addEventListener('click',(evt)=>{
-        if (evt.target===circle2) {
+//     circle2.addEventListener('click',(evt)=>{
+//         if (evt.target===circle2) {
             
-            playertwo()       
-            }
-        }
-    )
+//             playertwo()       
+//             }
+//         }
+//     )
     
     
-    circle3.addEventListener('click',(evt)=>{
-        if (evt.target===circle3) {
-            console.log('Hit')
+//     circle3.addEventListener('click',(evt)=>{
+//         if (evt.target===circle3) {
+//             console.log('Hit')
             
-            pplayertwo()   
-            }
+//             playertwo()   
+//             }
             
         
-    })
-    circle4.addEventListener('click',(evt)=>{
-        if (evt.target===circle4) {
-            console.log('Hit')
+//     })
+//     circle4.addEventListener('click',(evt)=>{
+//         if (evt.target===circle4) {
+//             console.log('Hit')
             
-            playertwo()
-        }
-    })
+//             playertwo()
+//         }
+//     })
     
-    circle5.addEventListener('click',(evt)=>{
-        if (evt.target===circle5) {
-            console.log('Hit')
+//     circle5.addEventListener('click',(evt)=>{
+//         if (evt.target===circle5) {
+//             console.log('Hit')
     
-            playertwo() 
-        }
-    })
-}
+//             playertwo() 
+//         }
+//     })
+// }
 
 
 
