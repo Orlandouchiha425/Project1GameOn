@@ -113,7 +113,7 @@ playButton.addEventListener('click',(evt)=>{
                 
                clearInterval(timer)
                playButton.style.display='none'
-               circle1.style.display='block';
+               circle1.style.display='none';
         circle2.style.display='none';
         circle3.style.display='none';
         circle4.style.display='none';
