@@ -13,7 +13,6 @@ const circle5 = document.getElementById('circle5');
 const endGameButton=document.getElementById('endGame');
 const restartButton=document.getElementById('restart');
 const playButton=document.getElementById('playButton');
-// const timer=document.getElementById("countdown");
 let scoreBoard=document.getElementById('scoreboard');
 const playerTwoButton=document.getElementById('playerTwoButton');
 const player2ScoreBoard=document.getElementById('player2Scoreboard');
@@ -23,20 +22,8 @@ const player2ScoreBoard=document.getElementById('player2Scoreboard');
 let counter=0;
 
 let timer
-// const startingTime=10;
-// let decreasingTime=startingTime;
 
 
-
-// const countDown=()=>{
-//     let seconds=decreasingTime;
-//     decreasingTime --;
-//     timer.textContent=seconds;
-//     if (timer===0) {
-//         window.alert('gameover')
-        
-//     }
-    
     
 
 
@@ -79,6 +66,7 @@ closeHowTo.addEventListener('click',(evt)=>{
 //
 
 onePlayer.addEventListener('click',(evt)=>{
+    
     onePlayer.style.display='none';
     twoPlayers.style.display='none';
     howTo.style.display='none';
@@ -238,7 +226,6 @@ const playertwo=()=>{
 
 
 const scorePlayerOneGame=()=>{
-    // countDown()
     let scorePlayerOne=0
     player1.points++
        scorePlayerOne+=player1.points;
@@ -250,14 +237,14 @@ const scorePlayerOneGame=()=>{
        
         console.log('you won');
         window.alert("you won");
-        window.confirm("Do you want to end Game?");
-        location.reload()
+        if(window.confirm("Do you want to end Game?")){
+            window.close("GoodBye")
+        }    else{ location.reload()}
         }
         
     }
 
 
-    // setTimeout(newTotal,3000,"Time is up")
 
 const allCircles=()=>{
 
@@ -302,12 +289,7 @@ const allCircles=()=>{
     circle5.addEventListener('click',(evt)=>{
         if (evt.target===circle5) {
             console.log('Hit')
-            // player1.points++
-            // scoreBoard.textContent="your current score is " + player1.points;
-            // // if (player1.points===5) {
-            // //     console.log('you won')
-                
-            // // }
+           
             scorePlayerOneGame()
         }
     })
@@ -376,56 +358,6 @@ const firstPlayer=()=>{
 
 
 
-
-
-
-
-
-// const secondPlayer=()=>{
-
-//     circle1.addEventListener('click',(evt)=>{
-       
-//         if (evt.target===circle1) {
-            
-//             playertwo()
-        
-//         }
-//     })
-    
-//     circle2.addEventListener('click',(evt)=>{
-//         if (evt.target===circle2) {
-            
-//             playertwo()       
-//             }
-//         }
-//     )
-    
-    
-//     circle3.addEventListener('click',(evt)=>{
-//         if (evt.target===circle3) {
-//             console.log('Hit')
-            
-//             playertwo()   
-//             }
-            
-        
-//     })
-//     circle4.addEventListener('click',(evt)=>{
-//         if (evt.target===circle4) {
-//             console.log('Hit')
-            
-//             playertwo()
-//         }
-//     })
-    
-//     circle5.addEventListener('click',(evt)=>{
-//         if (evt.target===circle5) {
-//             console.log('Hit')
-    
-//             playertwo() 
-//         }
-//     })
-// }
 
 
 
